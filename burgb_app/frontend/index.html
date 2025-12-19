@@ -360,7 +360,15 @@
                 placeholder="0.00"
               />
             </div>
-
+<div class="form-group">
+  <label for="allergen_warning">Allergen Warning</label>
+  <input
+    type="text"
+    id="allergen_warning"
+    name="allergen_warning"
+    placeholder="contains dairy or gluten"
+  />
+</div>
             <button type="submit" class="btn btn-primary btn-block">
               Add Item
             </button>
@@ -503,13 +511,16 @@
 
       async function handleAddItem(event) {
         event.preventDefault();
-
+        
+const allergenWarning = document.getElementById("allergen_warning").value;
+        
         const formData = {
           item_name: document.getElementById("item_name").value,
           unit_id: parseInt(document.getElementById("unit_id").value),
           price_per_item: parseFloat(
             document.getElementById("price_per_item").value
           ),
+          allergen_warning: allergenWarning,
         };
 
         try {
