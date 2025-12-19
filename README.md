@@ -13,7 +13,8 @@ A full-stack web application for managing restaurant menu items, built with Pyth
 - 🗑️ Delete items from the menu
 - 🎨 Beautiful, modern UI with responsive design
 - 🔄 Real-time updates
-
+- 🔍 search bar to quickly find any menu item
+- 🧪 Allergen warnings so users can avoid foods they are allergic to
 ## Project Structure
 
 ```
